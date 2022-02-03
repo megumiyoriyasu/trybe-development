@@ -1,0 +1,50 @@
+# Parte I - Comandos de Input e Output
+
+#1
+cd unix_tests
+
+#2
+cat > skills2.txt
+Internet
+Unix
+Bash
+
+#3
+cat >> skills2.txt 
+Cachorro
+Rato
+Coelho
+Ave
+Gato
+sort < skills2.txt
+
+#4
+wc -l skills2.txt 
+
+#5
+sort < skills2.txt | head -3 > top_skills.txt
+
+#6
+cat > phrases2.txt
+O dia esta lindo
+A chuva esta maravilhosa
+A Kyuubi esta dormindo
+Quero dormir
+
+#7
+grep -ic br phrases2.txt
+
+#8
+grep -ivc br phrases2.txt
+
+#9
+cat >> phrases2.txt 
+Japao
+Brasil
+
+#10
+cat phrases2.txt countries.txt > bunch_of_things.txt
+
+#11
+sort < bunch_of_things.txt
+
