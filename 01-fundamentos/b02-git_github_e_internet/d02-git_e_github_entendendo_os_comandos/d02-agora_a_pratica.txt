@@ -19,7 +19,7 @@ git commit -m "atualiza problema_git.txt"
 git push -u origin trybe-skills-changes
 
 #5
-Acrescentado duas abilidades que serão aprendidas na Trybe
+Acrescentada duas habilidades que serão aprendidas na Trybe
 
 #6
 git checkout main
@@ -36,7 +36,9 @@ JavaScript
 git add problema_git.txt
 git commit -m "acrescenta mais dados a problema_git.txt"
 git push -u origin trybe-skills-updates
+Acrescenta mais uma habilidade que será aprendida na Trybe
 
 #10
 //merge
 //resolve conflicts
+
