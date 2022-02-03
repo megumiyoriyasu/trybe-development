@@ -1,0 +1,36 @@
+# Parte III - Processos & Jobs
+
+#1
+ps
+
+#2
+sleep 30 &
+
+#3
+kill 136763
+
+#4
+sleep 30
+Ctrl+z
+bg
+
+#5
+sleep 300 &
+
+#6
+sleep 200
+Ctrl+z
+sleep 100
+Ctrl+z
+
+#7
+jobs
+fg %2
+Ctrl+z
+
+#8
+bg %1
+
+#9
+kill %2
+
