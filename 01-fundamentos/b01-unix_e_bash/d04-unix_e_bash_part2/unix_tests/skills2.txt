@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Cachorro
+Rato
+Coelho
+Ave
+Gato
