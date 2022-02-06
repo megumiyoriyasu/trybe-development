@@ -1,23 +1,25 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
-* {
-  font-family: 'Quicksand', sans-serif;
+body {
+font-size: 16px;
 }
-
-body{
-  margin: 0;
+h1 {
+font-size: 65px;
+color: orange;
+font-family: sans-serif;
+background-color: orange;
 }
-
-.fundo_destaque {
-  background-color: #D3D3D3;
+ul {
+background-color: yellow;
+font-style: italic;
+line-height: 30px;
+background-color: black;
 }
-
-header {
-  background-color: black;
+p {
+font-weight: 600;
+font-size: 3em;
+text-align: right;
+text-decoration: overline;
+background-color: black;
 }
-
-h1, h2 {
-  color: white;
-}
+/* .back {
+background-color: #d3d3d3;
+} */
