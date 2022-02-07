@@ -1,0 +1,18 @@
+h1, p {
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li:hover {
+  background-color: gray;
+  list-style: none;
+}
+
+li:active {
+  color: white;
+  list-style: none;
+}

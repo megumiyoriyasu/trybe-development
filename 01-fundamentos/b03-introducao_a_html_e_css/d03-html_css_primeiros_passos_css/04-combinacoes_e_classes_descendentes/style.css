@@ -1,0 +1,40 @@
+ol {
+    background-color: yellow;
+}
+ol li:nth-child(2n) {
+    color: rgb(135, 214, 16);
+}
+ol li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
+
+.header {
+    color: red;
+}
+.header.italic {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+li .italic {
+    font-weight: 1000;
+}
+
+.lp li:nth-child(-n+3) {
+    color: blue;
+}
+ul li.java {
+    background-color: pink;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+ul a:hover {
+    font-weight: 1000;
+    color: orange;
+}
