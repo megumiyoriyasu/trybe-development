@@ -1,8 +1,10 @@
-# Vamos praticar o que aprendemos no vídeo? 💪
+# Para fixar
+
+## Vamos praticar o que aprendemos no vídeo? 💪
 
 Abra o seu VS Code e faça os exercícios a seguir.
 
-###Dica: Com o plugin code runner que vimos no vídeo você pode executar o seu código no VS Code com o atalho ctrl + alt + n. Confira mais dicas sobre o VS Code aqui !
+### Dica: Com o plugin code runner que vimos no vídeo você pode executar o seu código no VS Code com o atalho ctrl + alt + n. Confira mais dicas sobre o VS Code aqui !
 
  1. Crie uma constante chamada myName e atribua a ela o seu nome (Exemplo: Carolina).
 
