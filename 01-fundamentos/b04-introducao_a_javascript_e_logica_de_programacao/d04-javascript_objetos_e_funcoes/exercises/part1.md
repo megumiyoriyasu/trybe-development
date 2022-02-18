@@ -1,6 +1,6 @@
 #Parte I - Objetos e For/In
 
-Usando o objeto abaixo, faça os exercícios a seguir:
+#### Usando o objeto abaixo, faça os exercícios a seguir:
 
 ```
 let info = {
@@ -54,7 +54,7 @@ Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPa
 Ambos recorrentes // Atenção para essa última linha!
 ```
 
-Usando o objeto abaixo, faça os exercícios a seguir:
+#### Usando o objeto abaixo, faça os exercícios a seguir:
 
 ```
 let leitor = {

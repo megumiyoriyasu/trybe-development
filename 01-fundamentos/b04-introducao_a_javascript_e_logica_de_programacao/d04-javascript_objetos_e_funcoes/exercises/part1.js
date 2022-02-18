@@ -1,54 +1,61 @@
-// let info = {
-//   personagem: 'Margarida',
-//   origem: 'Pato Donald',
-//   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-// };
+let info = {
+  personagem: 'Margarida',
+  origem: 'Pato Donald',
+  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+};
 
-// // exercício 1
+// exercício 1
 
-// console.log('Bem-vinda, ' + info['personagem']);
+console.log('Bem-vinda, ' + info['personagem']);
 
-// // exercício 2
+// exercício 2
 
-// info['recorrente'] = 'Sim';
-// console.log(info);
+info['recorrente'] = 'Sim';
+console.log(info);
 
-// // exercício 3
+// exercício 3
 
-// for (let key in info) {
-//   console.log(key);
-// }
+for (let key in info) {
+  console.log(key);
+}
 
-// // exercício 4
+// exercício 4
 
-// for (let key in info) {
-//   console.log(info[key]);
-// }
+for (let key in info) {
+  console.log(info[key]);
+}
 
-// // exercício 5
+// exercício 5
 
-// let info2 = {
-//   personagem: 'Tio Patinhas',
-//   origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
-//   nota: 'O último MacPatinhas',
-//   recorrente: 'Sim'
-// };
+let info2 = {
+  personagem: 'Tio Patinhas',
+  origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim'
+};
 
-// let infoCharacters = [];
+let infoCharacters = [];
 
-// function printCharacters (info, info2) {
-//   for (let key in info, info2) {
-//     infoCharacters.push(info[key] + ' e ' + info2[key]);
-//   }
-//   return infoCharacters;
-// }
-// printCharacters (info, info2);
+function printCharacters (info, info2) {
+  for (let key in info, info2) {
+    if (key === 'recorrente') {
+      infoCharacters.push(compareRecurrent(info[key], info2[key]))
+    } else {
+      infoCharacters.push(info[key] + ' e ' + info2[key]);
+    }
+  }
+  return infoCharacters;
+}
+function compareRecurrent(char1Recur, char2Recur){
+  if ((char1Recur.toLowerCase() == 'sim') && (char2Recur.toLowerCase() == 'sim')) {
+    return 'Ambos recorrentes';
+  } else {
+    return null;
+  }
+}
+printCharacters (info, info2);
 
-// if (info[info.length-1] === info2[info2.length-1]) {
-//   removed = infoCharacters.splice(infoCharacters.length-1, 1, "Ambos recorrentes");
-// }
-
-// console.log(infoCharacters);
+console.log(infoCharacters.join('\n'));
 
 // exercício 6
 
