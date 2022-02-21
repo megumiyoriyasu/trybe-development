@@ -153,7 +153,7 @@ if (custoProduto < 0 || valorVenda < 0) {
 
 // exercício 11
 
-const salario = 3500;
+const salario = 20000;
 
 let aliquotaInss = 0;
 let aliquotaIr = 0;
