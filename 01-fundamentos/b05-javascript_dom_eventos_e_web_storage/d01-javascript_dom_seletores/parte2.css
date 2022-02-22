@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #F2D8DD;
+  line-height: 1.5em;
+}
+
+#page-title {
+  font-size: 50px;
+  padding: 0.5em 0 0.5em 5%;
+}
+#subtitle {
+  margin-top: 15px;
+  margin-left: 3%;
+  font-size: 25px;
+}
+.paragraph {
+  margin-top: 10px;
+  margin-left: 2%;
+  font-size: 16px;
+}

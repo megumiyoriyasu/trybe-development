@@ -1,0 +1,28 @@
+main, section {
+    border-color: black;
+    border-style: solid;
+}
+
+.title {
+    text-align: center;
+}
+
+.main-content {
+    background-color: yellow;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.main-content .center-content {
+    background-color: red;
+    width: 50%;
+    margin: auto;
+    padding: 4% 0;
+}
+
+.main-content .center-content p {
+    font-style: italic;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
