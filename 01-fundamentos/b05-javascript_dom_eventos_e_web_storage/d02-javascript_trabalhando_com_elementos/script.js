@@ -61,7 +61,7 @@ firstDaughterOfFirstSonOfSon2.parentElement.parentElement.nextElementSibling;
 // 1. Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho (incompleto)
 
 let newDadOfDad = document.getElementById('paiDoPai');
-let childDadOfDad = newDadOfDad.childNodes;
+let childDadOfDad = newDadOfDad.children;
 
 for (let x = 0; x < childDadOfDad.length; x += 1) {
     let currentChild = childDadOfDad[x];
