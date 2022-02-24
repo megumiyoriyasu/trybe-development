@@ -1,4 +1,4 @@
-// Parte 1
+// Parte I
 
 // 1. Acesse o elemento elementoOndeVoceEsta
 
@@ -34,7 +34,7 @@ const thirdSon1 = element.nextElementSibling;
 
 const thirdSon2 = dad.firstElementChild.nextElementSibling.nextElementSibling;
 
-// Parte 2
+// Parte II
 
 // 1. Crie um irmão para elementoOndeVoceEsta
 
@@ -55,3 +55,14 @@ firstSonOfSon.appendChild(firstDaughterOfFirstSonOfSon);
 
 const firstDaughterOfFirstSonOfSon2 = firstSonOfSon.firstChild;
 firstDaughterOfFirstSonOfSon2.parentElement.parentElement.nextElementSibling;
+
+// Part III
+
+// 1. Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho (incompleto)
+
+let newElement = document.getElementById('elementoOndeVoceEsta');
+let elementChild = newElement.childNodes;
+
+for (let x = 0; x < elementChild.length; x += 1) {
+    let currentChild = elementChild[x];
+}
