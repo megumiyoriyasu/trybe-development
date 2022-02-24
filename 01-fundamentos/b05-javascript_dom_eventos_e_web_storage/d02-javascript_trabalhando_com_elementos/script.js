@@ -39,16 +39,19 @@ const thirdSon2 = dad.firstElementChild.nextElementSibling.nextElementSibling;
 // 1. Crie um irmão para elementoOndeVoceEsta
 
 const fifthDaughter = document.createElement('section');
+fifthDaughter.setAttribute('id', 'quintaFilhaSurpresa')
 dad.appendChild(fifthDaughter);
 
 // 2. Crie um filho para elementoOndeVoceEsta
 
 const thirdSurpriseDaughterOfSon = document.createElement('section');
+thirdSurpriseDaughterOfSon.setAttribute('id', 'terceiraFilhaDoFilhoSurpresa');
 element.appendChild(thirdSurpriseDaughterOfSon);
 
 // 3. Crie um filho para primeiroFilhoDoFilho
 
 const firstDaughterOfFirstSonOfSon = document.createElement('section');
+firstDaughterOfFirstSonOfSon.setAttribute('id', 'primeiraFilhaDoPrimeiroFilhoDoFilho');
 firstSonOfSon.appendChild(firstDaughterOfFirstSonOfSon);
 
 // 4. A partir desse filho criado, acesse terceiroFilho
@@ -71,7 +74,7 @@ for (let x = 0; x < childDadOfDad.length; x += 1) {
 }
 
 let newDad = document.getElementById('pai');
-let childDad = newDad.childNodes;
+let childDad = newDad.children;
 
 for (let x = 0; x < childDad.length; x += 1) {
     let currentChild = childDad[x];
@@ -81,7 +84,7 @@ for (let x = 0; x < childDad.length; x += 1) {
 }
 
 let newElement = document.getElementById('elementoOndeVoceEsta');
-let childElement = newElement.childNodes;
+let childElement = newElement.children;
 
 for (let x = 0; x < childElement.length; x += 1) {
     let currentChild = childElement[x];
