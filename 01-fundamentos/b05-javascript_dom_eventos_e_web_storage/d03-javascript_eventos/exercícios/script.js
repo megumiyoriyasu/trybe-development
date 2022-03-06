@@ -29,10 +29,12 @@ function createDays() {
     daysListItem.className = 'day';
     daysList.appendChild(daysListItem);
 
-    if (daysListItem.innerText == '24' || daysListItem.innerText == '25' || daysListItem.innerText == '31') {
+    if (daysListItem.innerText == '24' || daysListItem.innerText == '31') {
       daysListItem.classList.add('holiday');
-    } else if (daysListItem.innerText == '4' || daysListItem.innerText == '11' || daysListItem.innerText == '18' || daysListItem.innerText == '25') {
+    } else if (daysListItem.innerText == '4' || daysListItem.innerText == '11' || daysListItem.innerText == '18') {
       daysListItem.classList.add('friday');
+    } else if (daysListItem.innerText == '25') {
+      daysListItem.classList.add('holiday', 'friday');
     }
   }
 }
@@ -82,7 +84,23 @@ function fridayButton (buttonName) {
 }
 fridayButton('Sexta-feira');
 
-// Exercício 5
+// Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+const buttonFriday = document.querySelector('#btn-friday');
+
+function selectFriday () {
+  const fridayDays = document.querySelectorAll('.friday');
+  let fridayArray = [4, 11, 18, 25];
+  for (let x = 0; x < fridayDays.length; x += 1) {
+    if (fridayDays[x].innerText != 'SEXTOU!') {
+      fridayDays[x].innerText = 'SEXTOU!';
+    } else {
+      fridayDays[x].innerText = fridayArray[x];
+    }
+  }
+}
+buttonFriday.addEventListener('click', selectFriday)
 
 // Exercício 6
 
