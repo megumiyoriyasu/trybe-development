@@ -106,21 +106,32 @@ buttonFriday.addEventListener('click', selectFriday)
 
 function zoomInDay () {
   const days = document.querySelector('#days');
-  days.addEventListener('mouseover', function(x) {
-    x.target.style.fontSize = '40px';
+  days.addEventListener('mouseover', function(e) {
+    e.target.style.fontSize = '40px';
   })
 }
 zoomInDay();
 
 function zoomOutDay () {
   const days = document.querySelector('#days');
-  days.addEventListener('mouseout', function(x) {
-    x.target.style.fontSize = '20px';
+  days.addEventListener('mouseout', function(e) {
+    e.target.style.fontSize = '20px';
   })
 }
 zoomOutDay();
 
-// Exercício 7
+// Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks".
+
+const input = document.querySelector('#task-input')
+
+function addTask () {
+  const taskElement = document.createElement('span');
+  const divTask = document.querySelector('.my-tasks');
+  taskElement.innerHTML = input.value + '<br>';
+  divTask.appendChild(taskElement);
+}
+input.addEventListener('change', addTask);
 
 // Exercício 8
 
