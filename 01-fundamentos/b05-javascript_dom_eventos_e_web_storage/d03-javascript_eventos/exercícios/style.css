@@ -82,15 +82,14 @@ label {
   border-radius: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: inline-block;
-  height: 35px;
-  margin-left: 10px;
+  height: 20px;
   vertical-align: middle;
-  width: 35px;
+  width: 20px;
 }
 
 .my-tasks div:hover {
-  height: 45px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
 }
 
 .my-tasks span {
@@ -152,4 +151,8 @@ label {
   font-size: 20px;
   margin: 0px;
   padding: 10px 0;
+}
+
+.task {
+  margin-right: 1em;
 }
