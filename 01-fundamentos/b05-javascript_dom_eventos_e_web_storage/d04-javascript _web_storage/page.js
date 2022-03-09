@@ -51,3 +51,24 @@ function setFontType () {
   }
 }
 fontType.addEventListener('change', setFontType);
+
+function setLineHeight () {
+  const changeHeight = document.getElementsByClassName('changeHeight');
+  const selectHeight = document.getElementById('line-height').value;
+  for (let x = 0; x < changeHeight.length; x += 1) {
+    if (selectHeight == 's') {
+      changeHeight[x].classList.add('height-s');
+      changeHeight[x].classList.remove('height-m');
+      changeHeight[x].classList.remove('height-l');
+    } else if (selectHeight == 'm') {
+      changeHeight[x].classList.add('height-m');
+      changeHeight[x].classList.remove('height-s');
+      changeHeight[x].classList.remove('height-l');
+    } else if (selectHeight == 'l') {
+      changeHeight[x].classList.add('height-l');
+      changeHeight[x].classList.remove('height-s');
+      changeHeight[x].classList.remove('height-m');
+    }
+  }
+}
+lineHeight.addEventListener('change', setLineHeight);

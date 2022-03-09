@@ -2,9 +2,10 @@
   margin: 0;
 }
 
-header {
+aside {
   margin: 0.5em;
 }
+
 select {
   width: 100px;
 }
@@ -24,6 +25,7 @@ h1 {
 
 h2 {
   font-size: 25px;
+  line-height: 1.2em;
 }
 
 h3 {
@@ -43,6 +45,7 @@ p {
   text-align: justify;
   margin-bottom: 1em;
   font-size: 16px;
+  line-height: 1.2em;
 }
 
 footer {
@@ -123,28 +126,28 @@ p.font-l {
 
 /* line height: small */
 
-h2 .height-s {
+h2.height-s {
   line-height: 1em;
 }
-p .height-s {
+p.height-s {
   line-height: 1em;
 }
 
 /* line height: medium */
 
-h2 .height-m {
-  line-height: 1.3em;
+h2.height-m {
+  line-height: 1.2em;
 }
-p .height-m {
-  line-height: 1.3em;
+p.height-m {
+  line-height: 1.2em;
 }
 
 /* line height: large */
 
-h2 .height-l {
+h2.height-l {
   line-height: 1.5em;
 }
-p .height-l {
+p.height-l {
   line-height: 1.5em;
 }
 
