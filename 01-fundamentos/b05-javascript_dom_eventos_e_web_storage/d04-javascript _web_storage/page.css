@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+}
+
+aside {
+  margin: 0.5em;
+}
+
+select {
+  width: 100px;
+}
+
+#title {
+  margin-bottom: 3em;
+}
+
+main {
+  margin: 5em 10em;
+}
+
+h1 {
+  margin: 1em;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h3, h4 {
+  margin-bottom: 1em;
+}
+
+h4 {
+  margin-top: 2em;
+  font-size: 20px;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 1em;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+footer {
+  margin-top: 1em;
+}
+
+.center {
+  text-align: center;
+}
+
+/* theme: light */
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+/* theme: dark */
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* font size: small */
+
+h1.font-s {
+  font-size: 31px;
+}
+h2.font-s {
+  font-size: 21px;
+}
+h3.font-s {
+  font-size: 14px;
+}
+h4.font-s {
+  font-size: 16px;
+}
+p.font-s {
+  font-size: 14px;
+}
+
+/* font size: medium */
+
+h1.font-m {
+  font-size: 35px;
+}
+h2.font-m {
+  font-size: 25px;
+}
+h3.font-m {
+  font-size: 16px;
+}
+h4.font-m {
+  font-size: 20px;
+}
+p.font-m {
+  font-size: 16px;
+}
+
+/* font size: large */
+
+h1.font-l {
+  font-size: 39px;
+}
+h2.font-l {
+  font-size: 29px;
+}
+h3.font-l {
+  font-size: 20px;
+}
+h4.font-l {
+  font-size: 24px;
+}
+p.font-l {
+  font-size: 20px;
+}
+
+/* line height: small */
+
+h2.height-s {
+  line-height: 1em;
+}
+p.height-s {
+  line-height: 1em;
+}
+
+/* line height: medium */
+
+h2.height-m {
+  line-height: 1.2em;
+}
+p.height-m {
+  line-height: 1.2em;
+}
+
+/* line height: large */
+
+h2.height-l {
+  line-height: 1.5em;
+}
+p.height-l {
+  line-height: 1.5em;
+}
+
+/* font: newspaper */
+
+.newspaper {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* font: modern */
+
+.modern {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
