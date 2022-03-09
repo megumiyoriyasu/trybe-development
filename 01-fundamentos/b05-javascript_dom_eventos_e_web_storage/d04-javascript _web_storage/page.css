@@ -150,12 +150,12 @@ p .height-l {
 
 /* font: newspaper */
 
-* #newspaper {
+.newspaper {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* font: modern */
 
-* #modern {
+.modern {
   font-family: Verdana, Geneva, Tahoma, sans-serif
 }

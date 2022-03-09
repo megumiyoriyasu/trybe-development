@@ -21,7 +21,6 @@ theme.addEventListener('change', setTheme);
 function setFontSize () {
   const changeSize = document.getElementsByClassName('changeSize');
   const selectSize = document.getElementById('font-size').value;
-  console.log(changeSize);
   for (let x = 0; x < changeSize.length; x += 1) {
     if (selectSize == 's') {
       changeSize[x].classList.add('font-s');
@@ -39,3 +38,16 @@ function setFontSize () {
   }
 }
 fontSize.addEventListener('change', setFontSize);
+
+function setFontType () {
+  const changeFont = document.querySelector('.changeFont');
+  const selectFont = document.getElementById('font').value;
+  if (selectFont == 'serif') {
+    changeFont.classList.add('newspaper');
+    changeFont.classList.remove('modern');
+  } else if (selectFont == 'sans-serif') {
+    changeFont.classList.add('modern');
+    changeFont.classList.remove('newspaper');
+  }
+}
+fontType.addEventListener('change', setFontType);
