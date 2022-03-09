@@ -7,64 +7,63 @@
   <link rel="stylesheet" href="page.css">
   <title>Exercise 5.4</title>
 </head>
-<body>
-  <header>
-    <select name="theme" id="theme">
+<body class="changeTheme">
+  <aside>
+    <select name="theme" id="theme" class="changeTheme">
       <option value="null">Theme</option>
-      <option value="clear">Clear</option>
-      <option value="dark">Dark</option>
+      <option id="light" value="light">Light</option>
+      <option id="dark" value="dark">Dark</option>
     </select>
-    <select name="font-size" id="font-size">
+    <select name="font-size" id="font-size" class="changeTheme">
       <option value="null">Font Size</option>
       <option value="s">Small</option>
       <option value="m">Medium</option>
       <option value="l">Large</option>
     </select>
-    <select name="font" id="font">
+    <select name="font" id="font" class="changeTheme">
       <option value="null">Font type</option>
       <option value="serif">Newspaper</option>
       <option value="sans-serif">Modern</option>
     </select>
-    <select name="height" id="line-height">
+    <select name="height" id="line-height" class="changeTheme">
       <option value="null">Line height</option>
       <option value="s">Small</option>
       <option value="m">Medium</option>
       <option value="l">Large</option>
     </select>
-  </header>
+  </aside>
   <hr>
   <main>
-    <h1 class="center">Lorem Ipsum</h1>
+    <h1 class="center changeSize">Lorem Ipsum</h1>
     <section id="title" class="center">
-      <h2><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</em></h2>
-      <h3>"Sed condimentum volutpat nisl, sit amet cursus dolor convallis sed."</h3>
+      <h2 class="changeSize"><em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</em></h2>
+      <h3 class="changeSize">"Sed condimentum volutpat nisl, sit amet cursus dolor convallis sed."</h3>
     </section>
     <hr>
     <section>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum volutpat nisl, sit amet cursus dolor convallis sed. Donec et neque felis. Nulla condimentum erat ac lectus rutrum feugiat. Morbi semper pulvinar sollicitudin. Praesent in elit ac sapien aliquet rutrum. Etiam metus eros, vehicula non fringilla ac, pellentesque pretium dolor. Sed ligula est, facilisis vel pretium non, hendrerit quis dui. Integer mi quam, malesuada sit amet nibh at, commodo dapibus ipsum. Vestibulum sit amet eros quam. Aliquam sed elit aliquet tortor feugiat tincidunt. Nunc accumsan, eros vitae placerat interdum, ante eros egestas urna, id blandit nibh tortor sit amet est. Integer massa nibh, interdum et quam nec, aliquet eleifend mauris. Sed luctus consectetur iaculis. Sed hendrerit sem quis lectus posuere, ut lobortis nisl fringilla.</p>
+      <h4 class="changeSize">Lorem ipsum dolor sit amet, consectetur adipiscing</h4>
+      <p class="changeSize">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum volutpat nisl, sit amet cursus dolor convallis sed. Donec et neque felis. Nulla condimentum erat ac lectus rutrum feugiat. Morbi semper pulvinar sollicitudin. Praesent in elit ac sapien aliquet rutrum. Etiam metus eros, vehicula non fringilla ac, pellentesque pretium dolor. Sed ligula est, facilisis vel pretium non, hendrerit quis dui. Integer mi quam, malesuada sit amet nibh at, commodo dapibus ipsum. Vestibulum sit amet eros quam. Aliquam sed elit aliquet tortor feugiat tincidunt. Nunc accumsan, eros vitae placerat interdum, ante eros egestas urna, id blandit nibh tortor sit amet est. Integer massa nibh, interdum et quam nec, aliquet eleifend mauris. Sed luctus consectetur iaculis. Sed hendrerit sem quis lectus posuere, ut lobortis nisl fringilla.</p>
     </section>
     <section>
-      <h4>Donec nec cursus augue</h4>
-      <p>Ut consequat varius felis, eget varius nunc feugiat finibus. Ut vitae cursus ex. Proin condimentum imperdiet odio eget venenatis. Maecenas scelerisque massa neque, ut tincidunt elit convallis eget. Aliquam egestas ipsum odio, vitae faucibus nisi mollis vel. Curabitur lobortis massa eget turpis porttitor cursus. Nunc quis tempus eros, vel tincidunt metus. Ut tempor interdum posuere. Nam id quam ac nisl placerat vulputate ac et purus. Phasellus eget tellus malesuada, accumsan velit tincidunt, aliquet mauris. Suspendisse id efficitur orci.</p>
+      <h4 class="changeSize">Donec nec cursus augue</h4>
+      <p class="changeSize">Ut consequat varius felis, eget varius nunc feugiat finibus. Ut vitae cursus ex. Proin condimentum imperdiet odio eget venenatis. Maecenas scelerisque massa neque, ut tincidunt elit convallis eget. Aliquam egestas ipsum odio, vitae faucibus nisi mollis vel. Curabitur lobortis massa eget turpis porttitor cursus. Nunc quis tempus eros, vel tincidunt metus. Ut tempor interdum posuere. Nam id quam ac nisl placerat vulputate ac et purus. Phasellus eget tellus malesuada, accumsan velit tincidunt, aliquet mauris. Suspendisse id efficitur orci.</p>
     </section>
     <section>
-      <h4>Proin at elit congue non turpis placerat</h4>
-      <p>Curabitur varius enim ut mauris egestas, vitae condimentum odio consequat. Maecenas quis lacinia neque, at tempor est. Curabitur vulputate purus non ligula vestibulum dignissim. Nam accumsan ipsum dui, eget porta felis pellentesque nec. Etiam quis augue malesuada sem maximus venenatis aliquet non turpis. Praesent imperdiet blandit lorem non maximus. Vivamus lacus lorem, accumsan sollicitudin est id, elementum tempus lacus. Vivamus a commodo massa, euismod dignissim ligula. Nunc et dolor ac libero semper consequat bibendum quis leo. Suspendisse scelerisque ipsum sapien, viverra luctus nulla rutrum sed.</p>
+      <h4 class="changeSize">Proin at elit congue non turpis placerat</h4>
+      <p class="changeSize">Curabitur varius enim ut mauris egestas, vitae condimentum odio consequat. Maecenas quis lacinia neque, at tempor est. Curabitur vulputate purus non ligula vestibulum dignissim. Nam accumsan ipsum dui, eget porta felis pellentesque nec. Etiam quis augue malesuada sem maximus venenatis aliquet non turpis. Praesent imperdiet blandit lorem non maximus. Vivamus lacus lorem, accumsan sollicitudin est id, elementum tempus lacus. Vivamus a commodo massa, euismod dignissim ligula. Nunc et dolor ac libero semper consequat bibendum quis leo. Suspendisse scelerisque ipsum sapien, viverra luctus nulla rutrum sed.</p>
     </section>
     <section>
-      <h4>Curabitur nec consectetur augue</h4>
-      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer varius, erat sed vulputate tristique, libero eros iaculis dui, et egestas augue dolor ut libero. Nunc eget justo vel turpis rhoncus porta. In felis mi, ultrices a lacus sed, euismod semper turpis. Donec bibendum eget justo vitae feugiat. Etiam hendrerit, nunc eget molestie euismod, odio arcu fermentum ex, quis pretium metus elit non turpis. Curabitur velit mauris, vehicula non bibendum ac, malesuada sit amet libero. Proin vel urna ac libero tempor lobortis. Vestibulum finibus bibendum lorem, eget eleifend purus. Cras pellentesque felis sed est consectetur finibus. Maecenas in fermentum sem. Maecenas pharetra tristique diam sit amet ullamcorper.</p>
+      <h4 class="changeSize">Curabitur nec consectetur augue</h4>
+      <p class="changeSize">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer varius, erat sed vulputate tristique, libero eros iaculis dui, et egestas augue dolor ut libero. Nunc eget justo vel turpis rhoncus porta. In felis mi, ultrices a lacus sed, euismod semper turpis. Donec bibendum eget justo vitae feugiat. Etiam hendrerit, nunc eget molestie euismod, odio arcu fermentum ex, quis pretium metus elit non turpis. Curabitur velit mauris, vehicula non bibendum ac, malesuada sit amet libero. Proin vel urna ac libero tempor lobortis. Vestibulum finibus bibendum lorem, eget eleifend purus. Cras pellentesque felis sed est consectetur finibus. Maecenas in fermentum sem. Maecenas pharetra tristique diam sit amet ullamcorper.</p>
     </section>
     <section>
-      <h4>Suspendisse lobortis metus in feugiat aliquet</h4>
-      <p>Aliquam a metus tempor, accumsan risus nec, pellentesque odio. Nam pharetra purus vel vestibulum elementum. In varius sem et eros eleifend, a consectetur dui posuere. Etiam rutrum felis enim, pretium dictum arcu tristique eget. Quisque a tempor nibh, in facilisis nibh. Quisque diam erat, interdum in maximus ac, faucibus sed dui. Ut eget facilisis metus, eget hendrerit dui. Praesent bibendum egestas metus, at ullamcorper ipsum feugiat a. Quisque congue hendrerit convallis. Vestibulum non erat a odio ornare ornare.</p>
+      <h4 class="changeSize">Suspendisse lobortis metus in feugiat aliquet</h4>
+      <p class="changeSize">Aliquam a metus tempor, accumsan risus nec, pellentesque odio. Nam pharetra purus vel vestibulum elementum. In varius sem et eros eleifend, a consectetur dui posuere. Etiam rutrum felis enim, pretium dictum arcu tristique eget. Quisque a tempor nibh, in facilisis nibh. Quisque diam erat, interdum in maximus ac, faucibus sed dui. Ut eget facilisis metus, eget hendrerit dui. Praesent bibendum egestas metus, at ullamcorper ipsum feugiat a. Quisque congue hendrerit convallis. Vestibulum non erat a odio ornare ornare.</p>
     </section>
   </main>
   <hr>
   <footer>
-    <section>
-      <p class="center">help@lipsum.com<br>Privacy Policy</p>
+      <p class="center changeSize">help@lipsum.com<br>Privacy Policy</p>
     </section>
   </footer>
   <script src="page.js"></script>

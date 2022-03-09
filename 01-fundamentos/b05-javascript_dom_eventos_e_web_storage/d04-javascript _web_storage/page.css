@@ -19,6 +19,15 @@ main {
 
 h1 {
   margin: 1em;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 16px;
 }
 
 h3, h4 {
@@ -27,11 +36,13 @@ h3, h4 {
 
 h4 {
   margin-top: 2em;
+  font-size: 20px;
 }
 
 p {
   text-align: justify;
   margin-bottom: 1em;
+  font-size: 16px;
 }
 
 footer {
@@ -42,71 +53,72 @@ footer {
   text-align: center;
 }
 
-/* theme: clear */
+/* theme: light */
 
-body .clear {
-  background-color: white;
-  color: black;
-}
-select .clear {
+.light {
   background-color: white;
   color: black;
 }
 
 /* theme: dark */
 
-body .dark {
-  background-color: black;
-  color: white;
-}
-select .dark {
+.dark {
   background-color: black;
   color: white;
 }
 
 /* font size: small */
 
-h1 .font-s {
-  font-size: 39px;
+h1.font-s {
+  font-size: 31px;
 }
-h2 .font-s {
-  font-size: 29px;
+h2.font-s {
+  font-size: 21px;
 }
-h3, p .font-s {
-  font-size: 20px;
+h3.font-s {
+  font-size: 14px;
 }
-h4 .font-s {
-  font-size: 24px;
+h4.font-s {
+  font-size: 16px;
+}
+p.font-s {
+  font-size: 14px;
 }
 
 /* font size: medium */
 
-h1 .font-m {
+h1.font-m {
   font-size: 35px;
 }
-h2 .font-m {
+h2.font-m {
   font-size: 25px;
 }
-h3, p .font-m {
+h3.font-m {
   font-size: 16px;
 }
-h4 .font-m {
+h4.font-m {
   font-size: 20px;
+}
+p.font-m {
+  font-size: 16px;
 }
 
 /* font size: large */
 
-h1 .font-l {
-  font-size: 31px;
+h1.font-l {
+  font-size: 39px;
 }
-h2 .font-l {
-  font-size: 21px;
+h2.font-l {
+  font-size: 29px;
 }
-h3, p .font-l {
-  font-size: 12px;
+h3.font-l {
+  font-size: 20px;
 }
-h4 .font-l {
-  font-size: 16px;
+h4.font-l {
+  font-size: 24px;
+}
+p.font-l {
+  font-size: 20px;
 }
 
 /* line height: small */
