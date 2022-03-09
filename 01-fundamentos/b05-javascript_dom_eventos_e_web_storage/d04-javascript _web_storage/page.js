@@ -17,3 +17,25 @@ function setTheme () {
   }
 }
 theme.addEventListener('change', setTheme);
+
+function setFontSize () {
+  const changeSize = document.getElementsByClassName('changeSize');
+  const selectSize = document.getElementById('font-size').value;
+  console.log(changeSize);
+  for (let x = 0; x < changeSize.length; x += 1) {
+    if (selectSize == 's') {
+      changeSize[x].classList.add('font-s');
+      changeSize[x].classList.remove('font-m');
+      changeSize[x].classList.remove('font-l');
+    } else if (selectSize == 'm') {
+      changeSize[x].classList.add('font-m');
+      changeSize[x].classList.remove('font-s');
+      changeSize[x].classList.remove('font-l');
+    } else if (selectSize == 'l') {
+      changeSize[x].classList.add('font-l');
+      changeSize[x].classList.remove('font-s');
+      changeSize[x].classList.remove('font-m');
+    }
+  }
+}
+fontSize.addEventListener('change', setFontSize);
