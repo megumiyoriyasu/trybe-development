@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trybe Trip</title>
-</head>
-<body>
-  <header>
-    <h1>Trybe Trip</h1>
-  </header>
-  <form action="" method="get">
-    <!-- O formulário deverá permitir que o usuário insira os seguintes campos:
-    Nome Completo:
-      Limitado entre 10 e 40 caracteres.
-    E-mail:
-      Limitado entre 10 e 50 caracteres.
-    Destino Preferido:
-      4 opções: Cidade, Campo, Praia, Montanhas.
-    Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-      Limite de 500 caracteres.
-    Qual a melhor data para realizar sua viagem?
-    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-    Esses serão os principais campos utilizadas nos próximos exercícios. -->
-    <label for="name">Nome Completo:<input type="text" id="name" minlength="10" maxlength="40"></label>
-    <label for="email">E-mail:<input type="email" name="email" id="email"></label>
-    <div>
-      <label for="option1"><input type="radio" name="destination" id="option1" value="cidade">Cidade</label>
-      <label for="option2"><input type="radio" name="destination" id="option2" value="campo">Campo</label>
-      <label for="option3"><input type="radio" name="destination" id="option3" value="praia">Praia</label>
-      <label for="option4"><input type="radio" name="destination" id="option4" value="montanhas">Montanhas</label>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="trybetrip.css">
+    <title>Trybe Trip</title>
+  </head>
+  <body class="container-sm">
+    <header  class="d-flex justify-content-center">
+      <h1>Trybe Trip</h1>
+    </header>
+    <div class="d-flex justify-content-center">
+      <form action="" method="get" class="row g-3">
+        <!-- O formulário deverá permitir que o usuário insira os seguintes campos:
+        Nome Completo:
+          Limitado entre 10 e 40 caracteres.
+        E-mail:
+          Limitado entre 10 e 50 caracteres.
+        Destino Preferido:
+          4 opções: Cidade, Campo, Praia, Montanhas.
+        Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+          Limite de 500 caracteres.
+        Qual a melhor data para realizar sua viagem?
+        Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        Esses serão os principais campos utilizadas nos próximos exercícios. -->
+        <div>
+          <div class="get-input form-floating mb-3">
+            <input type="text" id="name" minlength="10" maxlength="40" class="form-control">
+            <label for="name">Nome Completo</label>
+          </div>
+          <div class="get-input form-floating mb-3">
+            <input type="email" name="email" id="email" class="form-control">
+            <label for="email">E-mail</label>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="destination" id="option1" class="form-check-input" value="cidade">
+          <label for="option1" class="form-check-label">Cidade</label>
+          <input type="radio" name="destination" id="option2" class="form-check-input" value="campo">
+          <label for="option2" class="form-check-label">Campo</label>
+          <input type="radio" name="destination" id="option3" class="form-check-input" value="praia">
+          <label for="option3" class="form-check-label">Praia</label>
+          <input type="radio" name="destination" id="option4" class="form-check-input" value="montanhas">
+          <label for="option4" class="form-check-label">Montanhas</label>
+        </div>
+        <div class="form-floating">
+          <textarea name="deserving" class="form-control" id="deserving" maxlength="500"></textarea>
+          <label for="deserving">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        </div>
+        <div>
+          <label for="date">Qual a melhor data para realizar sua viagem?</label>
+          <input type="date" name="date" id="date" class="form-control">
+        </div>
+        <div class="form-check form-switch">
+          <label for="promotion" class="form-check-label"><input type="checkbox" name="promotion" id="promotion" value="promotion" class="form-check-input">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+          <label for="release" class="form-check-label"><input type="checkbox" name="release" id="release" value="release" class="form-check-input">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        </div>
+      </form>
     </div>
-    <label for="deserving">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
-    <textarea name="deserving" id="deserving" rows="10" maxlength="500"></textarea>
-    <label for="date">Qual a melhor data para realizar sua viagem?<input type="date" name="date" id="date"></label>
-    <div>
-      <label for="promotion"><input type="checkbox" name="promotion" id="promotion" value="promotion">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-      <label for="release"><input type="checkbox" name="release" id="release" value="release">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    <div class="d-flex justify-content-center">
+      <!-- Crie um botão para enviar as informações preenchidas.
+      Agora vamos utilizar um pouco de javascript, para isso crie o arquivo script.js e o referencie no HTML.
+      Dica: Coloque a tag <script> no final do seu body. -->
+      <button type="submit" id="submit" class="btn btn-danger center">Enviar</button>
+      <!-- Crie um botão que limpe as informações contidas nos campos; -->
+      <button type="reset" class="btn btn-danger center">Apagar</button>
     </div>
-
-    <!-- Crie um botão para enviar as informações preenchidas.
-    Agora vamos utilizar um pouco de javascript, para isso crie o arquivo script.js e o referencie no HTML.
-    Dica: Coloque a tag <script> no final do seu body. -->
-    <button type="submit" id="submit">Enviar</button>
-
-    <!-- Crie um botão que limpe as informações contidas nos campos; -->
-    <button type="reset">Apagar</button>
-  </form>
-  <script src="trybetrip.js"></script>
-</body>
+    <script src="trybetrip.js"></script>
+  </body>
 </html>
