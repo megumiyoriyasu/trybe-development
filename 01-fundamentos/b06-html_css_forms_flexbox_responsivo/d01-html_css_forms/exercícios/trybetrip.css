@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', sans-serif;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  color: white;
+  margin: 50px;
+}
+
+form {
+  width: 80%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 7%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#destination label {
+  margin-right: 10px;
+}
+
+#deserving {
+  height: 100px;
+}
+
+.get-input label input {
+  width: 100%;
+}
+
+.center {
+  margin: 20px 10px 100px 10px;
+}
