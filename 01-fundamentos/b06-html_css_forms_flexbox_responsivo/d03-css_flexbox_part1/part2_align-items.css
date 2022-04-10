@@ -34,7 +34,11 @@
 .box-container {
   background-color: #0fa36b;
   display: flex;
-  /* ADICIONE AQUI SEUS TESTES */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: stretch; */
+  /* align-items: baseline; */
 }
 
 /* Teste as possibilidades (center , flex-start , flex-end , stretch e baseline) para a propriedade align-items. */
