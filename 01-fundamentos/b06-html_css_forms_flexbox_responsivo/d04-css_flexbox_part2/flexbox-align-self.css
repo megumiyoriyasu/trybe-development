@@ -17,7 +17,12 @@
 
 .change {
   /* Altere a propriedade align-self. */
-  align-self: center;
+  /* align-self: center; */
+  /* align-self: auto; */
+  /* align-self: baseline; */
+  /* align-self: flex-end; */
+  /* align-self: flex-start; */
+  /* align-self: stretch; */
   background-color: #FBD26A;
   display: flex;
   justify-content: center;
