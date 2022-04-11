@@ -5,6 +5,27 @@
   font-family: 'Ubuntu';
 }
 
+header {
+  height: 70px;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1, h3 {
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  text-decoration: underline;
+}
+
 .header-img {
   width: 70px;
 }
