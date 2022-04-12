@@ -10,7 +10,8 @@
   display: flex;
   justify-content: center;
   /* Altere a propriedade flex-basis */
-  flex-basis: 500px;
+  /* flex-basis: 500px; */
+  /* flex-basis: 666px; */
   flex-grow: 0;
   flex-shrink: 1;
 }
@@ -18,19 +19,23 @@
 .one {
   background-color: #FBD26A;
   list-style: none;
+  /* flex-basis: 100px; */
 }
 
 .two {
   background-color: #FAA488;
   list-style: none;
+  /* flex-basis: 200px; */
 }
 
 .three {
   background-color: #9069EF;
   list-style: none;
+  /* flex-basis: 300px; */
 }
 
 .four {
   background-color: #006472;
   list-style: none;
+  /* flex-basis: 400px; */
 }
