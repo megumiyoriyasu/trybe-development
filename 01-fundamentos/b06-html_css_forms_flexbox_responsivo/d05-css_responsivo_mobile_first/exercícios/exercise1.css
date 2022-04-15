@@ -5,6 +5,8 @@
 
 html {
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 *, *:before, *:after {
@@ -23,6 +25,7 @@ article {
 h1 {
   font-size: 25px;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 0.5em;
 }
 
@@ -82,5 +85,31 @@ figcaption {
 
   figcaption {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 5% 10%;
+    max-width: 900px;
+    background-color: black;
+    color: white;
+  }
+
+  article {
+    font-size: 16px;
+    margin-bottom: 2em;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 26px;
+  }
+  
+  figure {
+    width: 30%;
   }
 }
