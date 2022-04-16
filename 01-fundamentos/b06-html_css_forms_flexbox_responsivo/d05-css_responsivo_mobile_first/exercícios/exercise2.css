@@ -17,11 +17,11 @@ a {
 }
 
 h1 {
-  margin: 1em 0;
+  margin: 1em;
 }
 
 .container {
-  padding: 0 5%;
+  padding: 0 5% 5% 5%;
 }
 
 .main-content p , footer p, .indent li {
@@ -29,7 +29,20 @@ h1 {
   text-align: justify;
 }
 
-.container-header {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+  
+  a {
+    font-size: large;
+  }
+
+  h1 {
+    margin: 1.5em 1em 1em 1em;
+  }
+
+  .container {
+    padding: 0 8% 8% 8%;
+  }
 }
