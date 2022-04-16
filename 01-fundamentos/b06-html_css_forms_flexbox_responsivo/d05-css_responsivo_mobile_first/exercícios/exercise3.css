@@ -93,3 +93,40 @@ body {
     margin: 0 0 0 4%;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #aside {
+    display: none;
+  }
+
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  #navigation ul {
+    display: block;
+  }
+
+  #navigation li a {
+    border-right: none;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  #container {
+    padding-top: 80px;
+  }
+}
