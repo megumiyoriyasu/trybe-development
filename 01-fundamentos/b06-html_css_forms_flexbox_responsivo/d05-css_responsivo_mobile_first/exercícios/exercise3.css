@@ -78,3 +78,18 @@ body {
   padding: 20px;
   height: 1%;
 }
+
+@media print {
+  #header, #navigation, #footer {
+    display: none;
+  }
+
+  #content {
+    width: 90%;
+    padding: 20px 0 0 0;
+  }
+
+  #aside {
+    margin: 0 0 0 4%;
+  }
+}
