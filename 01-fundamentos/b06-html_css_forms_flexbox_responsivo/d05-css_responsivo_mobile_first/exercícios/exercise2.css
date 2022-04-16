@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+}
+
+a {
+  font-size: medium;
+}
+
+h1 {
+  margin: 1em;
+}
+
+.container {
+  padding: 0 5% 5% 5%;
+}
+
+.main-content p , footer p, .indent li {
+  text-indent: 1em;
+  text-align: justify;
+}
+
+@media screen and (min-width: 800px) {
+  a {
+    font-size: large;
+  }
+
+  h1 {
+    margin: 1.5em 1em 1em 1em;
+  }
+
+  .container {
+    padding: 0 8% 8% 8%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    margin: 1.5em 1em 0 1em;
+  }
+
+  .container {
+    display: flex;
+    padding: 5%;
+    max-width: 1200px;
+  }
+
+  .container-aside {
+    width: 350px;
+    margin: 2%;
+  }
+
+  .container-text {
+    width: 70%;
+    margin: 2%;
+  }
+}
