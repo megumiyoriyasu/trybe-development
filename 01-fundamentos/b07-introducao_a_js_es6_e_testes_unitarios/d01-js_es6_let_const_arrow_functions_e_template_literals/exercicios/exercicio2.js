@@ -1,3 +1,7 @@
+// Crie uma função que receba um número e retorne seu fatorial.
+//  - Na matemática, o fatorial de um número não negativo N , com a notação N! , é o produto de todos os inteiros menores ou iguais a N . Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
+//  - Bônus (opcional): tente fazer o mesmo exercício de forma recursiva . Spoiler: É possível resolver com uma linha usando ternary operator.
+
 const factorial = (numb) => {
   let factorialResult = 1;
   for (let x = numb; x > 1; x -= 1) {
@@ -6,6 +10,8 @@ const factorial = (numb) => {
   return factorialResult;
 }
 console.log(factorial(3));
+
+// Crie uma função que receba uma frase e retorne qual a maior palavra.
 
 const longestWord = (string) => {
   let stringArray = string.split(' ');
@@ -20,3 +26,20 @@ const longestWord = (string) => {
   return bigWord
 }
 console.log(longestWord('Antonio foi ao banheiro e nao sabemos o que aconteceu'));
+
+// Crie uma página que contenha:
+//  - Um botão ao qual será associado um event listener ;
+//  - Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+//  - Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
+
+const score = document.getElementById('count');
+let clickCount = 0;
+score.innerText = clickCount;
+
+const countScore = () => {
+  clickCount = clickCount += 1;
+  score.innerText = clickCount;
+}
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', countScore);
