@@ -1,8 +1,7 @@
 // Part I
-const test = {};
-
 const makeObject = (object, key, value) => {
+  object = {};
   object[key] = value;
 	console.log(object);
 }
-makeObject(test, 'nickname', 'naido');
+makeObject('user', 'nickname', 'naido');
