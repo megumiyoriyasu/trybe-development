@@ -22,9 +22,9 @@ const lesson3 = {
 
 const addKeyValue = (object, key, value) => {
   object[key] = value;
-  console.log(object);
+  return object;
 }
-addKeyValue(lesson2, 'turno', 'noite');
+console.log(addKeyValue(lesson2, 'turno', 'noite'));
 
 // Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
@@ -44,5 +44,16 @@ const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
 console.log(allLessons);
 
 // Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+
+const getNumStudents = (object) => {
+  let sum = 0;
+  const arrayObj = Object.keys(object);
+  for (let obj in arrayObj) {
+    sum += object[arrayObj[obj]].numeroEstudantes;
+  }
+  return sum;
+}
+console.log(getNumStudents(allLessons));
+
 // Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
 // Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
