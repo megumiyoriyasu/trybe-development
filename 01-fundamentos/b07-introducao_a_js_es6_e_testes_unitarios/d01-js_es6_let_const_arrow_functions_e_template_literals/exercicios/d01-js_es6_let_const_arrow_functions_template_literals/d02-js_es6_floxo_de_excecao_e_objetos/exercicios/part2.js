@@ -47,8 +47,7 @@ customerInfo(order);
 // Modifique o valor total da compra para R$ 50,00.
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
-
+  console.log(`Olá ${order.name}, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ ${order.payment.total}.`);
 }
 
 orderModifier(order);
