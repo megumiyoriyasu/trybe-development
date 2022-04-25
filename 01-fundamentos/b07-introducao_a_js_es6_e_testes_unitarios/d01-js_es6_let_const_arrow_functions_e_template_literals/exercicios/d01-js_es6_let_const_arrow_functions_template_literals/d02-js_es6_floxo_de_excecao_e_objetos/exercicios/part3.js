@@ -65,3 +65,14 @@ const printValueByNumber = (object, number) => {
 }
 
 // Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+const verifyKeyValue = (object, key, value) => {
+  const arrayPair = Object.entries(object);
+  let result = false;
+  for (let pair in arrayPair) {
+    if (arrayPair[pair][0] === key && arrayPair[pair][1] === value) {
+      result = true;
+    }
+  }
+  return result;
+}
