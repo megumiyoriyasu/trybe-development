@@ -31,6 +31,9 @@ addKey(lesson2, 'turno', 'noite');
 const listKeys = (object) => Object.keys(object);
 
 // Crie uma função para mostrar o tamanho de um objeto.
+
+const countKeys = (object) => listKeys(object).length;
+
 // Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 // Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3.
 // Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
