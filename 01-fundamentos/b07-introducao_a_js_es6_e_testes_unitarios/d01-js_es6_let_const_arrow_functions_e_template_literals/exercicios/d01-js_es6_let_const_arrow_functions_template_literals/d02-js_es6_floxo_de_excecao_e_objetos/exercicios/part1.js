@@ -14,12 +14,19 @@ const checkInputs = (input1, input2) => {
   }
 }
 
+const checkNumbers = (input1, input2) => {
+  if (isNaN(input1) || isNaN(input2)) {
+    throw new Error ('O valor inserido não é um número.');
+  }
+}
+
 const sum = () => {
   const value1 = document.getElementById('value1').value;
   const value2 = document.getElementById('value2').value;
   const resultMessage = document.getElementById('result');
   try {
     checkInputs(value1, value2);
+    checkNumbers(value1, value2);
     const result = parseInt(value1) + parseInt(value2);
     return resultMessage.innerHTML = `Resultado: ${result}`;
     document.getElementById('value1').value = '';
