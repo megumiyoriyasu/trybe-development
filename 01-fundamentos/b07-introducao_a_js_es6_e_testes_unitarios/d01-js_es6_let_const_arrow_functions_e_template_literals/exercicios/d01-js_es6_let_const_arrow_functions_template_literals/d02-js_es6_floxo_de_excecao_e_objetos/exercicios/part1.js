@@ -29,11 +29,12 @@ const sum = () => {
     checkNumbers(value1, value2);
     const result = parseInt(value1) + parseInt(value2);
     return resultMessage.innerHTML = `Resultado: ${result}`;
-    document.getElementById('value1').value = '';
-    document.getElementById('value2').value = '';
   } catch (error) {
     resultMessage.innerHTML = `${error.message}`;
     resultMessage.style.color = 'red';
+  } finally {
+    document.getElementById('value1').value = '';
+    document.getElementById('value2').value = '';
   }
 }
 
