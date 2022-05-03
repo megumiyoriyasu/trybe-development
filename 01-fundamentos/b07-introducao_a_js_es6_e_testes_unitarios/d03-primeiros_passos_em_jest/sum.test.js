@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz, mapString, encode, decode } = require('./sum');
+const { sum, myRemove, myFizzBuzz, mapString, encode, decode, techList } = require('./sum');
 
 describe('Testes relacionados a função sum', () => {
   it('Verifica retorno da soma dos parâmetros', () => {
@@ -65,3 +65,39 @@ describe('Testes relacionados as funções encode e decode', () => {
     expect(decode('l1g4st1').length).toBe(7);
   });
 })
+
+describe('Testa a função techList', () => {
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas'
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas'
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas'
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas'
+      },
+      {
+        tech: 'React',
+        name: 'Lucas'
+      }
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
+});

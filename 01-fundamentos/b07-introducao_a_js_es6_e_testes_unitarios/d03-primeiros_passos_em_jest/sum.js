@@ -61,4 +61,22 @@ function decode(string) {
 	return mapString(map, string);
 }
 
-module.exports = { sum, myRemove, myFizzBuzz, mapString, encode, decode };
+function techList (array, nome) {
+	const sortedArray = array.sort();
+	const result = [];
+	if(array.length === 0) {
+		return 'Vazio!';
+	} else {
+		const obj = {};
+		for(let i = 0; i < sortedArray.length; i += 1) {
+			const newObj = {};
+			newObj['tech'] = sortedArray[i];
+			newObj['name'] = nome;
+			result.push(newObj);
+		}
+		return result;
+	}
+};
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
+module.exports = { sum, myRemove, myFizzBuzz, mapString, encode, decode, techList };
