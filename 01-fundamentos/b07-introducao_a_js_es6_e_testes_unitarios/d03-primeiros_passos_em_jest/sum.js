@@ -61,14 +61,14 @@ function decode(string) {
 	return mapString(map, string);
 }
 
-function techList (array, nome) {
+function techList(array, nome) {
 	const sortedArray = array.sort();
 	const result = [];
-	if(array.length === 0) {
+	if (array.length === 0) {
 		return 'Vazio!';
 	} else {
 		const obj = {};
-		for(let i = 0; i < sortedArray.length; i += 1) {
+		for (let i = 0; i < sortedArray.length; i += 1) {
 			const newObj = {};
 			newObj['tech'] = sortedArray[i];
 			newObj['name'] = nome;
@@ -76,7 +76,22 @@ function techList (array, nome) {
 		}
 		return result;
 	}
-};
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+}
 
-module.exports = { sum, myRemove, myFizzBuzz, mapString, encode, decode, techList };
+function hydrate(drink) {
+	const array = drink.split(' ');
+	let water = 0;
+	for(let x = 0; x < array.length; x += 1) {
+		const parseNum = parseInt(array[x]);
+		if (parseNum) {
+			water += parseNum;
+		}
+	}
+	let cup = 'copo';
+	if (water > 1) {
+		cup = 'copos';
+	}
+	return `${water} ${cup} de água`;
+}
+
+module.exports = { sum, myRemove, myFizzBuzz, mapString, encode, decode, techList, hydrate };
